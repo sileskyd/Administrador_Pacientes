@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Header() {
+export default function Header({titulo}) {
   return (
-    <div className='container-xl titulo'>
-      <h1>Administrador de citas.</h1>
+    <div>
+      <h1 className='display-4 titulo'>{titulo}</h1>
     </div>
   )
 }

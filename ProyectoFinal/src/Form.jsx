@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import './form.css'
+import Subtitulos from './Subtitulos'
 
 export default function Form() {
 
@@ -30,7 +31,7 @@ export default function Form() {
   return (
     <div className='container formulario-central'>
       <div>
-        <h4>Agendar mi cita</h4>
+        <Subtitulos subtitulo="Agregar Cita"/>
         <form className='inputForm' action=''>
           <div className='mb-3'>
             <label htmlFor=''>Nombre Mascota</label>

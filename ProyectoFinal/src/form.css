@@ -1,6 +1,7 @@
 .formulario-central{
-    background-color: rgb(213, 213, 213);
-    padding-top: 20px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 10px;
     border-radius: 15px;
 }
