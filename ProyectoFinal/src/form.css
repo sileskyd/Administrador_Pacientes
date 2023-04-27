@@ -1,4 +1,6 @@
-.inputForm{
-    display: flex;
-    flex-direction: column;
+.formulario-central{
+    background-color: rgb(213, 213, 213);
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-radius: 15px;
 }
