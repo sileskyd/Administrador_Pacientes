@@ -30,7 +30,6 @@ export default function Form({pacientes, setPacientes}) {
   return (
     <div className='container formulario-central'>
       <div>
-        <Subtitulos subtitulo="Agregar Cita."/>
         <form className='inputForm' action=''>
           <div className='mb-3'>
             <label htmlFor=''>Nombre Mascota</label>

@@ -10,17 +10,24 @@ function App() {
 
   return (
     <div className='App'>
-      <Header titulo="Administrar mis citas"/>
+      <Header titulo="Administrar mis citas."/>
       <br/>
       <div className='container'>
         <div className='row justify-content-between'>
           <div className='col'>
+            <Subtitulos subtitulo="Agregar Cita."/>
             <Form pacientes={pacientes} setPacientes={setPacientes}/>
           </div>
           <div className='col'>
             <Subtitulos subtitulo="Mis Citas."/>
             {pacientes.map((paciente)=>{
-              return <Paciente nombre={paciente.mascota} dueño={paciente.dueño}/>
+              return <Paciente 
+                        nombre={paciente.mascota} 
+                        dueño={paciente.dueño} 
+                        fecha={paciente.fecha} 
+                        hora={paciente.hora}
+                        descripcion={paciente.descripcion}
+                      />
             })}
           </div>
         </div>
