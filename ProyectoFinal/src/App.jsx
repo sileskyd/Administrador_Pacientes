@@ -4,6 +4,7 @@ import Header from './Header'
 import Form from './Form'
 import Paciente from './Paciente'
 import Subtitulos from './Subtitulos'
+import Banner from './Banner'
 
 function App() {
   const[pacientes, setPacientes]=useState([])
@@ -32,7 +33,8 @@ function App() {
           </div>
         </div>
       </div>
-      
+      <br/>
+      <Banner/>
     </div>
   )
 }

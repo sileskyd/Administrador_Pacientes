@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import './form.css'
-import Subtitulos from './Subtitulos'
 
 export default function Form({pacientes, setPacientes}) {
 
