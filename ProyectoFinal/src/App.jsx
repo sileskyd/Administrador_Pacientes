@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import Header from './header'
+import Header from './Header'
 import Form from './Form'
 import Paciente from './Paciente'
 import Subtitulos from './Subtitulos'
