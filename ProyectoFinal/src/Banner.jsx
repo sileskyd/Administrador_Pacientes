@@ -3,8 +3,8 @@ import React from 'react'
 export default function Banner() {
   return (
     <div className='container'>
-      <h1>Espacio para un banner...</h1>
-      <p>Este espacio está diseñado para agregar un banner publicitario dentro de la página.</p>
+      <img src='https://pets2.me/media/res/3/1/0/1/6/31016.q9sx2c.1250x540.jpg' className='imagen'/>
+      <img src='https://i1.adis.ws/i/petsathome/rc-pets-feeding?w=1250' className='imagen'/>
     </div>
   )
 }
