@@ -7,7 +7,10 @@ import Subtitulos from './Subtitulos'
 import Banner from './Banner'
 
 function App() {
-  const[pacientes, setPacientes]=useState([])
+  const[pacientes, setPacientes]=useState([]);
+  const eliminar = (index) => {
+    setPacientes(pacientes.filter((paciente, ind) => ind != index));
+  }
 
   return (
     <div className='App'>
@@ -21,13 +24,14 @@ function App() {
           </div>
           <div className='col'>
             <Subtitulos subtitulo="Mis Citas."/>
-            {pacientes.map((paciente)=>{
+            {pacientes.map((paciente, index)=>{
               return <Paciente 
                         nombre={paciente.mascota} 
                         dueño={paciente.dueño} 
                         fecha={paciente.fecha} 
                         hora={paciente.hora}
                         descripcion={paciente.descripcion}
+                        eliminarFuncion={() => eliminar(index)}
                       />
             })}
           </div>
